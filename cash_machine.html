@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/my_cash_machine.css">
+    <title>Just IT Cash Machine</title>
+</head>
+<body>
+    <div class="cash-machine">
+        <h1>Just IT Cash Machine</h1>
+        <input type="text" id="display" disabled>
+        <div class="keypad">
+            <button onclick="updateDisplay('1')">1</button>
+            <button onclick="updateDisplay('2')">2</button>
+            <button onclick="updateDisplay('3')">3</button>
+            <button onclick="myJustitBootcampCashMachine('checkBalance')">Balance</button>
+            <button onclick="updateDisplay('4')">4</button>
+            <button onclick="updateDisplay('5')">5</button>
+            <button onclick="updateDisplay('6')">6</button>
+            <button onclick="myJustitBootcampCashMachine('deposit')">Deposit</button>
+            <button onclick="updateDisplay('7')">7</button>
+            <button onclick="updateDisplay('8')">8</button>
+            <button onclick="updateDisplay('9')">9</button>
+            <button onclick="myJustitBootcampCashMachine('withdraw')">Withdraw</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="updateDisplay('0')">0</button>
+            <button onclick="myJustitBootcampCashMachine('changePassword')">Change PIN</button>
+            <button onclick="myJustitBootcampCashMachine('exit')">Exit</button>
+        </div>
+    </div>
+    <script src="js/cash_machine.js"></script>
+</body>
+</html>
